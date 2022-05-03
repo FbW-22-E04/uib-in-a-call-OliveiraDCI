@@ -5,8 +5,30 @@
 }
 
 .background-container {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: lightgray;
-  clip-path: polygon(0 5%, 0 0, 100% 0, 100% 95%, 0 5%);
+  /* clip-path: polygon(0 5%, 0 0, 100% 0, 100% 95%, 0 5%); */
+}
+
+.phone-frame {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 25% auto;
+  background-color: black;
+  border-radius: 15px;
+}
+
+.phone-display {
+  position: relative;
+  margin: 0 10px;
+  margin-top: 30px;
+  background-image: url(./images/man.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 280px;
+  height: 500px;
 }
