@@ -4,16 +4,24 @@
   padding: 0;
 }
 
+body {
+  background-color: grey;
+}
+
 .background-container {
+  position: absolute;
+  z-index: -1;
   width: 100vw;
   height: 100vh;
   background-color: lightgray;
-  /* clip-path: polygon(0 5%, 0 0, 100% 0, 100% 95%, 0 5%); */
+  clip-path: polygon(0 5%, 0 0, 100% 0, 100% 95%, 0 5%);
 }
 
 .phone-frame {
-  position: relative;
-  top: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 300px;
   height: 500px;
   margin: 0 auto;
